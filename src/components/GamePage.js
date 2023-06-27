@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Container } from "semantic-ui-react";
 
 function GamePage() {
   const [games, setGames] = useState([]);
@@ -9,9 +10,15 @@ function GamePage() {
       .then((data) => setGames(data));
   }, []);
 
-  const gamesToDisplay = games.map((game) => game.name);
+  const gamesToDisplay = games;
 
-  return <ul>{gamesToDisplay}</ul>;
+  return (
+    <Container>
+      <h1>MyGameList</h1>
+      <br />
+      <GameCollection games={gamesToDisplay} />
+    </Container>
+  );
 }
 
 export default GamePage;
