@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GameCollection from "./GameCollection";
 import { Container } from "semantic-ui-react";
 
 function GamePage() {
