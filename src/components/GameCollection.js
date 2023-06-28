@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import GameCard from "./GameCard";
 import { Card } from "semantic-ui-react";
 
@@ -12,7 +12,7 @@ function GameCollection({ games }) {
     />
   ));
 
-  return <Card.Group itemsPerRow={6}>{gamesToDisplay}</Card.Group>;
+  return <Card.Group itemsPerRow={5}>{gamesToDisplay}</Card.Group>;
 }
 
 export default GameCollection;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import GameCollection from "./GameCollection";
 import { Container } from "semantic-ui-react";
 

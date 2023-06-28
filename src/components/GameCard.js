@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Card } from "semantic-ui-react";
+import React from "react";
+import { Card, Image } from "semantic-ui-react";
 
 function GameCard({ name, background_image, rating }) {
   return (
     <Card>
-      <div>
-        <img className="image" src={background_image} alt="" />
+        <Image className="image" src={background_image} alt="" />
         <div className="name">{name}</div>
-        <div className="rating">{rating}</div>
-      </div>
+        <div className="rating">Rating: {rating}</div>
     </Card>
   );
 }
