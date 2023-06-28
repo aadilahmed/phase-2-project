@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GameCollection from "./GameCollection";
+import NavBar from "./NavBar";
 import { Container } from "semantic-ui-react";
 
 function GamePage() {
@@ -17,6 +18,7 @@ function GamePage() {
     <Container>
       <h1>MyGameList</h1>
       <br />
+      <NavBar />
       <GameCollection games={gamesToDisplay} />
     </Container>
   );

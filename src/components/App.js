@@ -1,11 +1,20 @@
 import React from "react";
 import GamePage from "./GamePage";
-import { Route, NavLink } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <GamePage />
+      <Switch>
+        <Route exact path="/create">
+          <GamePage />
+        </Route>
+        <Route exact path="/">
+          <GamePage />
+        </Route>
+      </Switch>
+      
     </div>
   );
 }
