@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const linkStyles = {
-  display: "inline-block",
+  display: "block",
   width: "50px",
   padding: "6px",
   margin: "0 6px 6px",
@@ -13,7 +13,7 @@ const linkStyles = {
 
 function NavBar() {
   return (
-    <div>
+    <div className="sidebar">
       <NavLink
         to="/"
         exact

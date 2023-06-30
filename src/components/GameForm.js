@@ -35,7 +35,7 @@ function GameForm({ onCreateGame }) {
   }
 
   return (
-    <div>
+    <div className="gameform-div">
       <h3>Add a Game!</h3>
       <Form onSubmit={handleSubmit}>
         <Form.Group widths="equal">
