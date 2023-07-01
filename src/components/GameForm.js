@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Form, Grid, Segment } from "semantic-ui-react";
 
 function GameForm({ onCreateGame }) {
@@ -7,6 +8,8 @@ function GameForm({ onCreateGame }) {
     background_image: "",
     rating: null,
   });
+
+  const history = useHistory();
 
   function handleChange(event) {
     setFormData({
@@ -32,6 +35,8 @@ function GameForm({ onCreateGame }) {
     })
       .then((response) => response.json())
       .then((data) => onCreateGame(data));
+
+    history.push('/');
   }
 
   return (
@@ -67,7 +72,7 @@ function GameForm({ onCreateGame }) {
             />
             
           </Form.Group>
-          <Form.Button>Submit</Form.Button>
+          <Form.Button color="teal">Submit</Form.Button>
         </Form>
         </Segment>
       </Grid.Column>
