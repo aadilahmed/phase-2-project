@@ -6,7 +6,7 @@ const linkStyles = {
   width: "50px",
   padding: "6px",
   margin: "0 6px 6px",
-  background: "blue",
+  background: "rgba(11, 11, 11, 0)",
   textDecoration: "none",
   color: "white",
 };

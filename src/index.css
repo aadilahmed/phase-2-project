@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.App {
+  background-color: rgb(236, 235, 234);
+}
+
 .sidebar {
   height: 100%;
   width: 150px;
@@ -19,14 +23,11 @@ code {
   left: 0;
   top: 0;
   padding-top: 40px;
-  background-color: lightblue;
-}
-
-.gameform-div {
-  margin-left: 150px;
+  background-color: rgba(11, 11, 11, 0.927);
 }
 
 .gamepage-container {
   margin-left: 150px;
+  padding: 2rem;
 }
 

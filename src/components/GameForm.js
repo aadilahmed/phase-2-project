@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Form } from "semantic-ui-react";
+import { Form, Grid, Segment } from "semantic-ui-react";
 
 function GameForm({ onCreateGame }) {
   const [formData, setFormData] = useState({
     name: "",
     background_image: "",
-    rating:0,
+    rating: null,
   });
 
   function handleChange(event) {
@@ -35,38 +35,43 @@ function GameForm({ onCreateGame }) {
   }
 
   return (
-    <div className="gameform-div">
-      <h3>Add a Game!</h3>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group widths="equal">
-          <Form.Input
-            fluid
-            label="Name"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          <Form.Input
-            fluid
-            label="Background Image"
-            placeholder="Background Image"
-            name="background_image"
-            value={formData.background_image}
-            onChange={handleChange}
-          />
-          <Form.Input
-            fluid
-            label="Rating"
-            placeholder="Rating"
-            name="rating"
-            value={formData.rating}
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Form.Button>Submit</Form.Button>
-      </Form>
-    </div>
+    <Grid textAlign="center" style={{ height: '100vh' }} verticalAlign="middle">
+      <Grid.Column style={{ maxWidth: 450 }}>
+      <Segment stacked>
+        <h3>Add a Game!</h3>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group widths="equal" grouped>
+            <Form.Input
+              fluid
+              label="Name"
+              placeholder="Enter Game Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <Form.Input
+              fluid
+              label="Background Image URL"
+              placeholder="Enter Background Image URL"
+              name="background_image"
+              value={formData.background_image}
+              onChange={handleChange}
+            />
+            <Form.Input
+              fluid
+              label="Rating"
+              placeholder="Enter Rating"
+              name="rating"
+              value={formData.rating}
+              onChange={handleChange}
+            />
+            
+          </Form.Group>
+          <Form.Button>Submit</Form.Button>
+        </Form>
+        </Segment>
+      </Grid.Column>
+    </Grid>
   );
 }
 
