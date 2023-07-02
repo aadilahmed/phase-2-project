@@ -12,7 +12,7 @@ function GameCollection({ games }) {
     />
   ));
 
-  return <Card.Group itemsPerRow={5}>{gamesToDisplay}</Card.Group>;
+  return <Card.Group itemsPerRow={4}>{gamesToDisplay}</Card.Group>;
 }
 
 export default GameCollection;

@@ -35,3 +35,24 @@ h2 {
   color: aliceblue;
 }
 
+.header {
+  font-size: 3rem;
+}
+
+.name {
+  padding:5px;
+  font-size: larger;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.rating {
+  padding:5px;
+  margin-left: 5px;
+}
+
+.prompt {
+  width: 500px;
+  margin: auto;
+}
+

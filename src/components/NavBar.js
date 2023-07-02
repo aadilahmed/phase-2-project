@@ -5,7 +5,7 @@ import { Header } from "semantic-ui-react";
 const linkStyles = {
   display: "block",
   width: "100%",
-  padding: "6px",
+  padding: "10px",
   //margin: "0 6px 6px",
   background: "rgba(11, 11, 11, 0)",
   textDecoration: "none",
@@ -15,7 +15,7 @@ const linkStyles = {
 function NavBar() {
   return (
     <div className="sidebar">
-      <Header style={{ color: "aliceblue" }}>
+      <Header style={linkStyles}>
         <i class="gamepad icon" style={{ color: "#dc3545" }}></i>
         MyGameList
       </Header>
@@ -28,7 +28,7 @@ function NavBar() {
           width: "100%",
         }}
       >
-        <i class="home icon" style={{color: "aliceblue"}}></i>
+        <i class="home icon" style={{ color: "aliceblue" }} />
         Home
       </NavLink>
       <NavLink
@@ -40,7 +40,7 @@ function NavBar() {
           width: "100%",
         }}
       >
-        <i class="cloud upload icon" style={{color: "aliceblue"}}></i>
+        <i class="cloud upload icon" style={{ color: "aliceblue" }} />
         Create
       </NavLink>
     </div>
