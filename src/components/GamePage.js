@@ -11,7 +11,6 @@ function GamePage({ games }) {
     <div className="gamepage-container">
       <Container>
         <h1 className="header">Games</h1>
-        <br />
         <Search query={query} onQuery={setQuery} />
         <br />
         <GameCollection games={gamesToDisplay} />
