@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Form, Grid, Segment } from "semantic-ui-react";
+import gamepad from "../Video-Game-Controller-Icon.svg.png";
 
 function GameForm({ onCreateGame }) {
   const [formData, setFormData] = useState({
@@ -43,7 +44,11 @@ function GameForm({ onCreateGame }) {
     <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 650 }}>
         <Segment stacked>
-        <img class="ui centered image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Video-Game-Controller-Icon.svg/1024px-Video-Game-Controller-Icon.svg.png" style={{height:"100px", width:"100px"}}></img>
+          <img
+            class="ui centered image"
+            src={gamepad}
+            style={{ height: "100px", width: "100px" }}
+          />
           <h3>Add a Game!</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Group widths="equal" grouped>
@@ -72,7 +77,9 @@ function GameForm({ onCreateGame }) {
                 onChange={handleChange}
               />
             </Form.Group>
-            <Form.Button style={{background:"#dc3545", color:"aliceblue"}}>Submit</Form.Button>
+            <Form.Button style={{ background: "#dc3545", color: "aliceblue" }}>
+              Submit
+            </Form.Button>
           </Form>
         </Segment>
       </Grid.Column>
