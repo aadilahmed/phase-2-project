@@ -36,44 +36,44 @@ function GameForm({ onCreateGame }) {
       .then((response) => response.json())
       .then((data) => onCreateGame(data));
 
-    history.push('/');
+    history.push("/");
   }
 
   return (
-    <Grid textAlign="center" style={{ height: '100vh' }} verticalAlign="middle">
-      <Grid.Column style={{ maxWidth: 450 }}>
-      <Segment stacked>
-        <h3>Add a Game!</h3>
-        <Form onSubmit={handleSubmit}>
-          <Form.Group widths="equal" grouped>
-            <Form.Input
-              fluid
-              label="Name"
-              placeholder="Enter Game Name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-            <Form.Input
-              fluid
-              label="Background Image URL"
-              placeholder="Enter Background Image URL"
-              name="background_image"
-              value={formData.background_image}
-              onChange={handleChange}
-            />
-            <Form.Input
-              fluid
-              label="Rating"
-              placeholder="Enter Rating"
-              name="rating"
-              value={formData.rating}
-              onChange={handleChange}
-            />
-            
-          </Form.Group>
-          <Form.Button color="teal">Submit</Form.Button>
-        </Form>
+    <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
+      <Grid.Column style={{ maxWidth: 650 }}>
+        <Segment stacked>
+        <img class="ui centered image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Video-Game-Controller-Icon.svg/1024px-Video-Game-Controller-Icon.svg.png" style={{height:"100px", width:"100px"}}></img>
+          <h3>Add a Game!</h3>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group widths="equal" grouped>
+              <Form.Input
+                fluid
+                label="Name"
+                placeholder="Enter Game Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <Form.Input
+                fluid
+                label="Background Image URL"
+                placeholder="Enter Background Image URL"
+                name="background_image"
+                value={formData.background_image}
+                onChange={handleChange}
+              />
+              <Form.Input
+                fluid
+                label="Rating"
+                placeholder="Enter Rating"
+                name="rating"
+                value={formData.rating}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Button style={{background:"#dc3545", color:"aliceblue"}}>Submit</Form.Button>
+          </Form>
         </Segment>
       </Grid.Column>
     </Grid>

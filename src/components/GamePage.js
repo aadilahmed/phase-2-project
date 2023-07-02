@@ -8,7 +8,7 @@ function GamePage({ games }) {
   return (
     <div className="gamepage-container">
       <Container>
-        <h1>MyGameList</h1>
+        <h1>Games</h1>
         <br />
         <GameCollection games={gamesToDisplay} />
       </Container>
