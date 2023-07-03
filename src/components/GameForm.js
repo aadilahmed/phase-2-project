@@ -48,6 +48,7 @@ function GameForm({ onCreateGame }) {
           <img
             className="ui centered image"
             src={gamepad}
+            alt="game controller on red background"
             style={{ height: "100px", width: "100px" }}
           />
           <h3>Add a Game!</h3>
