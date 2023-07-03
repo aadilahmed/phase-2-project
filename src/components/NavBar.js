@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <div className="sidebar">
       <Header style={linkStyles}>
-        <i class="gamepad icon" style={{ color: "#dc3545" }}></i>
+        <i className="gamepad icon" style={{ color: "#dc3545" }}></i>
         MyGameList
       </Header>
       <NavLink
@@ -27,7 +27,7 @@ function NavBar() {
           width: "100%",
         }}
       >
-        <i class="home icon" style={{ color: "aliceblue" }} />
+        <i className="home icon" style={{ color: "aliceblue" }} />
         Home
       </NavLink>
       <NavLink
@@ -39,7 +39,7 @@ function NavBar() {
           width: "100%",
         }}
       >
-        <i class="cloud upload icon" style={{ color: "aliceblue" }} />
+        <i className="cloud upload icon" style={{ color: "aliceblue" }} />
         Create
       </NavLink>
     </div>
