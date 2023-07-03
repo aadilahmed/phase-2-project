@@ -42,7 +42,7 @@ function GameForm({ onCreateGame }) {
   }
 
   return (
-    <Grid textAlign="center" style={{ height: "100vh", margin: "0" }} verticalAlign="middle">
+    <Grid textAlign="center" style={{ height: "100vh", margin: "0", "margin-left":"200px" }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 650 }} >
         <Segment stacked>
           <img
