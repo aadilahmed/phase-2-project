@@ -21,3 +21,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Backend Code Github Repository
 https://github.com/aadilahmed/phase-2-react-project-json-server
+
+## Sources
+Game images and ratings are from [rawg.io](https://rawg.io)
