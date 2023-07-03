@@ -13,6 +13,7 @@ const linkStyles = {
 
 function NavBar() {
   return (
+    // Sidebar includes routes to Home and Create pages
     <div className="sidebar">
       <Header style={linkStyles}>
         <i className="gamepad icon" style={{ color: "#dc3545" }}></i>

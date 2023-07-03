@@ -19,6 +19,7 @@ function GameForm({ onCreateGame }) {
     });
   }
 
+  // Handle GameForm submit and redirect to home page
   function handleSubmit(event) {
     event.preventDefault();
     const gameData = {
@@ -41,8 +42,8 @@ function GameForm({ onCreateGame }) {
   }
 
   return (
-    <Grid textAlign="center" style={{ height: "103vh" }} verticalAlign="middle">
-      <Grid.Column style={{ maxWidth: 650 }}>
+    <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
+      <Grid.Column style={{ maxWidth: 650 }} >
         <Segment stacked>
           <img
             className="ui centered image"
